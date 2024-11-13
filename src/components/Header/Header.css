@@ -1,0 +1,56 @@
+/* src/components/Header.css */
+.header {
+    width: 100%;
+    position: fixed; /* Pins the header to the top */
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Ensures header stays above other content */
+}
+
+.topnav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    width: 160px;
+    height: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-links.active {
+    display: block;
+}
+
+.theme-toggle-btn {
+    margin-left: 15px;
+    padding: 8px 12px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #333;
+}
