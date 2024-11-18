@@ -18,7 +18,6 @@ function App() {
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
             <>
                 <GlobalStyles />
-                <Toggle theme={theme} toggleTheme={toggleTheme} />
                 <div className="App">
                     {/* Pass theme and toggleTheme as props */}
                     <Header theme={theme} toggleTheme={toggleTheme} />
@@ -30,8 +29,12 @@ function App() {
                     <ColumnBox>
                     <footer>
                     Credits:
+                    <br>
+                    </br>
                     <small>Sun icon made by smalllikeart from www.flaticon.com</small>
-                     <small>Moon icon made by Freepik from www.flaticon.com</small>
+                    <br>
+                    </br>
+                    <small>Moon icon made by Freepik from www.flaticon.com</small>
                     </footer>
                     </ColumnBox>
                 </div>
